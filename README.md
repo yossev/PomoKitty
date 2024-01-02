@@ -1,6 +1,6 @@
 # PomoKitty , The Productivity App
 **Inspired by imissmylibrary.com , i made this website in a reactJS Learning Sprint , made to feel cozy and aesthetic , I hope you love it 🤎**
-
+ 
 # Features 
 - Pomodoro Timer with Adjustable Time Intervals
 - Spotify Lofi Playlist!
