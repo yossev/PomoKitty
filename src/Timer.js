@@ -54,7 +54,7 @@ function Timer() {
     },1000);
 
     return () => clearInterval(interval);
-  }, [settingsInfo]);
+  }, []);
 
   const totalSeconds = mode === 'work'
     ? settingsInfo.workMinutes * 60
