@@ -6,9 +6,12 @@ import SettingsButton from "./SettingsButton";
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from "./SettingsContext";
 import logo from './WebLogo.png';
+import sound from './RingTone.mp3';
 
 const coffee =  '#594545';
-const mocha  = '#9E7676'; 
+const mocha  = '#9E7676';
+
+const audio = new Audio(sound); // Timer End Sound Effect
 
 function Timer() {
   const settingsInfo = useContext(SettingsContext);
@@ -37,6 +40,8 @@ function Timer() {
 
       setSecondsLeft(nextSeconds);
       secondsLeftRef.current = nextSeconds;
+
+      audio.play();
     }
 
     secondsLeftRef.current = settingsInfo.workMinutes * 60;
@@ -53,7 +58,11 @@ function Timer() {
       tick();
     },1000);
 
-    return () => clearInterval(interval);
+    return () => {
+    clearInterval(interval)
+      audio.pause();
+      audio.currentTime = 0;
+    }
   }, []);
 
   const totalSeconds = mode === 'work'
