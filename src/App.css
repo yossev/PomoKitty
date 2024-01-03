@@ -320,7 +320,7 @@ a {
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px;
 }
 
 .todo h2 {
@@ -330,7 +330,7 @@ a {
 
 .input {
   padding: 4px;
-  width: calc(100% - 10px); /* Adjust as needed */
+  width: calc(100% - 10px); 
   margin-bottom: 10px;
 }
 
