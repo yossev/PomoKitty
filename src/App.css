@@ -1,50 +1,48 @@
 body {
   background-color: #eee;
-  color: rgba(255,255,255,0.1);
+  color: rgba(255, 255, 255, 0.1);
+  margin: 0; /* Reset default margin */
 }
 
-main{
-
+main {
   padding-top: 50px;
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Pixelify Sans', sans-serif;
-  color:#52361e;
-  
+  color: #52361e;
 }
 
-button{
+button {
   background-color: transparent;
-  color : #52361e;
+  color: #52361e;
   border: 0;
   display: inline-block;
-  width : 100px;
+  width: 100px;
   cursor: pointer;
 }
 
 button:hover {
-  opacity: 0.8; /* Adjust the opacity value as needed */
+  opacity: 0.8;
 }
 
-button.with-text{
+button.with-text {
   width: auto;
-  background-color:rgba(255,255,255,0.1);
-  border-radius:10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
   font-family: 'Pixelify Sans', sans-serif;
 }
-button.with-text svg{
+
+button.with-text svg {
   width: 36px;
-  float:left;
+  float: left;
   margin-right: 5px;
 }
 
-footer{
-
-
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -58,9 +56,9 @@ footer{
   font-family: 'Pixelify Sans', sans-serif;
 }
 
-a{
+a {
   color: #52361e;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .about-window {
@@ -74,7 +72,7 @@ a{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.about-header{
+.about-header {
   display: flex;
   justify-content: flex-end;
   font-size: 10px;
@@ -88,6 +86,7 @@ a{
   width: 50px;
   height: 50px;
 }
+
 .about-content {
   margin-top: 0px;
 }
@@ -99,7 +98,7 @@ a{
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
-  padding: 8px 12px; 
+  padding: 8px 12px;
   font-family: 'Pixelify Sans', sans-serif;
   position: absolute;
   top: 10px;
@@ -119,15 +118,239 @@ a{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
 }
+
 .news-panel ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .news-panel li {
   margin-bottom: 6px;
 }
+
 .news-panel h2 {
   margin-bottom: 10px;
   text-align: left;
+}
+
+.todo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  width: 300px; /* Adjust as needed */
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+  text-align: left; /* Align text to the left within the todo box */
+}
+
+.todo h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.bottom-right-panel {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.bottom-right-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-panel li {
+  margin-bottom: 6px;
+}
+
+.input {
+  padding: 4px;
+}
+body {
+  background-color: #eee;
+  color: rgba(255, 255, 255, 0.1);
+  margin: 0; /* Reset default margin */
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #52361e;
+}
+
+button {
+  background-color: transparent;
+  color: #52361e;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: #52361e;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.0rem;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+a {
+  color: #52361e;
+  text-decoration: underline;
+}
+
+.about-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: right;
+  width: 50px;
+  height: 50px;
+}
+
+.about-content {
+  margin-top: 0px;
+}
+
+.about-button {
+  background-color: transparent;
+  color: #52361e;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 12px;
+  font-family: 'Pixelify Sans', sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about-button:hover {
+  opacity: 0.8;
+}
+
+.bottom-left-panel {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.news-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-panel li {
+  margin-bottom: 6px;
+}
+
+.news-panel h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.todo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.todo h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input {
+  padding: 4px;
+  width: calc(100% - 10px); /* Adjust as needed */
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #52361e;
+  border: 0;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
 }

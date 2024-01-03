@@ -38,6 +38,9 @@ function App() {
         <NewsPanel />
 
       </div>
+      <div className='bottom-right-panel'>
+        <todo />
+      </div>
       <SettingsContext.Provider value={{
         workMinutes: WorkTime,
         breakMinutes: BreakTime,
