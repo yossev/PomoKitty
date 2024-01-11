@@ -9,7 +9,7 @@ main {
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   color: #52361e;
 }
 
@@ -33,7 +33,7 @@ button.with-text {
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 button.with-text svg {
@@ -52,8 +52,9 @@ footer {
   color: #52361e;
   text-align: center;
   line-height: 50px;
-  font-size: 1.0rem;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+  font-family: "Pixelify Sans", sans-serif;
+  z-index: 0;
 }
 
 a {
@@ -99,7 +100,7 @@ a {
   cursor: pointer;
   font-size: 1rem;
   padding: 8px 12px;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -155,6 +156,7 @@ a {
 
 .bottom-right-panel {
   position: fixed;
+  z-index: 2;
   bottom: 10px;
   right: 10px;
   background-color: #fff;
@@ -187,7 +189,7 @@ main {
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   color: #52361e;
 }
 
@@ -211,7 +213,7 @@ button.with-text {
   padding: 10px 20px;
   font-size: 1.4rem;
   line-height: 36px;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 button.with-text svg {
@@ -230,8 +232,12 @@ footer {
   color: #52361e;
   text-align: center;
   line-height: 50px;
-  font-size: 1.0rem;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+footer p {
+  z-index: 0;
 }
 
 a {
@@ -277,7 +283,7 @@ a {
   cursor: pointer;
   font-size: 1rem;
   padding: 8px 12px;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -330,7 +336,7 @@ a {
 
 .input {
   padding: 4px;
-  width: calc(100% - 10px); 
+  width: calc(100% - 10px);
   margin-bottom: 10px;
 }
 
@@ -353,4 +359,12 @@ li {
 
 .delete-button:hover {
   opacity: 0.8;
+}
+
+.add-button {
+  background-color: #52361e;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 10;
 }
