@@ -9,6 +9,7 @@ import SpotifyPlaylist from './SpotifyPlaylist';
 import cat from './KittyGif.gif';
 import AboutWindow from './AboutWindow';
 import NewsPanel from './NewsPanel';
+import Todo from './Todo';
 
 function App() {
 
@@ -39,7 +40,7 @@ function App() {
 
       </div>
       <div className='bottom-right-panel'>
-        <todo />
+        <Todo />
       </div>
       <SettingsContext.Provider value={{
         workMinutes: WorkTime,

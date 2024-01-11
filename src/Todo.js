@@ -5,9 +5,10 @@ function Todo()
     const [items, setItems] = useState([]); // Array of tasks to do
     // Helper Function
     function addItem(){
-
+        console.log('yo');
         if(!newItem){
             alert("Please enter a task 🐈");
+            return;
         }
         const item = { // Add a comma here
             id: Math.random(),
@@ -36,9 +37,9 @@ function Todo()
                 value = {newItem}
                 onChange={(e) => setNewItem(e.target.value)}
             />
-            <button onClick={()=> addItem()}>Add</button>
+            <button onClick={()=> addItem()} className="add-button">Add</button>
             <ul>
-                {items.map((item) => (
+                {items && items.map((item) => (
                     <li key={item.id}>
                         {item.value}
                         <button className='delete-button' onClick={() => deleteItem(item.id)}>x</button>
