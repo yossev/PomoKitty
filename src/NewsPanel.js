@@ -7,10 +7,11 @@ return (
 
         <h2>News and Updates:</h2>
         <ul>
-            <li>First Ever Version! Send your Suggestions!</li>
+            <li>Added a Todo List! Track Your Tasks and Get your Work done!</li>
+            <li style={{textAlign: "left"}}>and more!</li>
         </ul>
 
-
+ 
 
 
     </div>

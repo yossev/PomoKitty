@@ -63,7 +63,6 @@ function App() {
     marginButtom: '0px',
   }}
 />
-
       <SpotifyPlaylist />
       </main>
     <Footer />

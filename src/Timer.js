@@ -65,6 +65,7 @@ function Timer() {
     }
   }, []);
 
+  const ModeText = modeRef.current === 'work' ? 'Focus 🧠' : 'Break 💤'; // To be Displayed Depending on the Mode
   const totalSeconds = mode === 'work'
     ? settingsInfo.workMinutes * 60
     : settingsInfo.breakMinutes * 60;
@@ -73,15 +74,20 @@ function Timer() {
   const minutes = Math.floor(secondsLeft / 60);
   let seconds = secondsLeft % 60;
   if(seconds < 10) seconds = '0'+seconds;
-
+  
   return (
     <div>
+      <h1 style={{color: coffee}}>{ModeText}</h1>
 <img src={logo} alt="Logo" style={{ position: 'absolute', top: 0, left: 0, width: '200px', height: 'auto' }} />
-      <CircularProgressbar value={percentage} text={minutes + ':' + seconds} styles={buildStyles({
-                    textColor : coffee,
-                    pathColor : coffee,
-                    trailColor : mocha,
-                })} />
+      <CircularProgressbar
+        value={percentage}
+        text={minutes + ":" + seconds}
+        styles={buildStyles({
+          textColor: coffee,
+          pathColor: coffee,
+          trailColor: mocha,
+        })}
+      />
       <div style={{marginTop:'20px'}}>
         {isPaused
           ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} />

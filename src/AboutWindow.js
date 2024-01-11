@@ -1,4 +1,5 @@
 import React from "react";
+import awakeCat from "./awake.png" ;   
 
 const AboutWindow = ({onClose}) => {
 
@@ -13,6 +14,7 @@ return(
         </button>
     </div>
     <div className="about-content">
+        <img src={awakeCat} alt="awake cat" style={{width: '40px', height: 'auto', margin: 'auto', display: 'block'}}/> 
         <h1>About</h1>
         <p>PomoKitty is a <a href = "https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique </a>
          website , inspired by <a href = "https://www.imissmylibrary.com/">imissmylibrary</a> , for all the people who want a cozy , relaxing and productive work/study/code environment.</p>
