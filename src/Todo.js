@@ -35,6 +35,7 @@ function Todo()
                 type="text"
                 placeholder="What do you want to do?"
                 value = {newItem}
+                fontFamily="Pixelify Sans"
                 onChange={(e) => setNewItem(e.target.value)}
             />
             <button onClick={()=> addItem()} className="add-button">Add</button>
