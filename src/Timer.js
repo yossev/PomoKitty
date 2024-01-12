@@ -30,7 +30,6 @@ function Timer() {
   }
 
   useEffect(() => {
-
     function switchMode() {
       const nextMode = modeRef.current === 'work' ? 'break' : 'work';
       const nextSeconds = (nextMode === 'work' ? settingsInfo.workMinutes : settingsInfo.breakMinutes) * 60;
