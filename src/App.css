@@ -20,10 +20,12 @@ button {
   display: inline-block;
   width: 100px;
   cursor: pointer;
+  transition: all 0.16s ease-in;
 }
 
 button:hover {
   opacity: 0.8;
+
 }
 
 button.with-text {
