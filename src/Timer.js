@@ -64,7 +64,15 @@ function Timer() {
     }
   }, []);
 
-  const ModeText = modeRef.current === 'work' ? 'Focus 🧠' : 'Break 💤'; // To be Displayed Depending on the Mode
+  const ModeText = modeRef.current === 'work' ? 'Focus 🧠' : 'Break 💤';
+  if(modeRef.current === 'break'){
+    document.title = "Take a Break!";
+    document.body.style = "background-color: #d3cdd1";
+  }
+  else if(modeRef.current === 'work'){
+    document.title = "Focus Time!";
+    document.body.style = "background-color: #f5f5f5";
+  } // To be Displayed Depending on the Mode
   const totalSeconds = mode === 'work'
     ? settingsInfo.workMinutes * 60
     : settingsInfo.breakMinutes * 60;
