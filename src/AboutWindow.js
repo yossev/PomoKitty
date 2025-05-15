@@ -18,8 +18,6 @@ return(
         <h1>About</h1>
         <p>PomoKitty is a <a href = "https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique </a>
          website , inspired by <a href = "https://www.imissmylibrary.com/">imissmylibrary</a> , for all the people who want a cozy , relaxing and productive work/study/code environment.</p>
-        <p>If you have any Suggestions / Feedback , Contact me on <a href = "https://twitter.com/yossevo">twitter</a></p>
-        <p>I wanna Thank my fiancée for the incredible support 🤎</p>
         <p>This is an Open Source Project , You can Contribute on <a href ="https://github.com/yossev/PomoKitty">Github</a></p>
         <p><a href = "https://www.buymeacoffee.com/yossevo">Buy me a ☕?</a></p>
     </div>
