@@ -2,6 +2,7 @@ body {
   color: rgba(255, 255, 255, 0.1);
   transition: background-color 1s;
   margin: 0;
+  background-color: #a8a08b !important; /* Very light brown background */
 }
 
 main {
@@ -15,7 +16,7 @@ main {
 
 
 button {
-  background-color: transparent;
+  background-color: #c1f2b0; /* Light green */
   color: #52361e;
   border: 0;
   display: inline-block;
@@ -26,12 +27,11 @@ button {
 
 button:hover {
   opacity: 0.8;
-
 }
 
 button.with-text {
   width: auto;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #c1f2b0; /* Light green */
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 1.4rem;
@@ -96,7 +96,7 @@ a {
 }
 
 .about-button {
-  background-color: transparent;
+  background-color: #c1f2b0; /* Light green */
   color: #52361e;
   border: 0;
   display: inline-block;
@@ -117,7 +117,7 @@ a {
   position: fixed;
   bottom: 10px;
   left: 10px;
-  background-color: #fff;
+  background-color: #969191 !important;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
@@ -142,14 +142,14 @@ a {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  background-color: #fff;
+  background-color: #969191 !important;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
-  width: 300px; /* Adjust as needed */
-  max-height: 400px; /* Adjust as needed */
+  width: 300px;
+  max-height: 400px;
   overflow-y: auto;
-  text-align: left; /* Align text to the left within the todo box */
+  text-align: left;
 }
 
 .todo h2 {
@@ -172,9 +172,9 @@ a {
   padding: 4px;
 }
 body {
-  background-color: #eee;
+  background-color: #f5f1e6; /* Very light brown */
   color: rgba(255, 255, 255, 0.1);
-  margin: 0; /* Reset default margin */
+  margin: 0;
 }
 
 main {
@@ -187,7 +187,7 @@ main {
 }
 
 button {
-  background-color: transparent;
+  background-color: #c1f2b0; /* Light green */
   color: #52361e;
   border: 0;
   display: inline-block;
@@ -201,7 +201,7 @@ button:hover {
 
 button.with-text {
   width: auto;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #c1f2b0; /* Light green */
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 1.4rem;
@@ -244,7 +244,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: #969191 !important;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -269,7 +269,7 @@ a {
 }
 
 .about-button {
-  background-color: transparent;
+  background-color: #c1f2b0; /* Light green */
   color: #52361e;
   border: 0;
   display: inline-block;
@@ -356,8 +356,8 @@ li {
 }
 
 .add-button {
-  background-color: #52361e;
-  color: white;
+  background-color: #c1f2b0; /* Light green */
+  color: #52361e;
   padding: 10px 10px;
   cursor: pointer;
   z-index: 10;

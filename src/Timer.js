@@ -64,7 +64,7 @@ function Timer() {
     }
   }, []);
 
-  const ModeText = modeRef.current === 'work' ? 'Focus 🧠' : 'Break 💤';
+  const ModeText = modeRef.current === 'work' ? 'Focus ☕' : 'Break 💤';
   if(modeRef.current === 'break'){
     document.title = "Take a Break!";
     document.body.style = "background-color: #d3cdd1";
