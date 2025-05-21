@@ -76,11 +76,11 @@ function Timer() {
   // New useEffect for updating the title
   useEffect(() => {
     if(mode === 'break'){
-      document.title = "Take a Break! " + minutes + ":" + seconds;
+      document.title = "Break 💤" + minutes + ":" + seconds;
       document.body.style.backgroundColor = "#d3cdd1";
     }
     else if(mode === 'work'){
-      document.title = "Focus Time! " + minutes + ":" + seconds;
+      document.title = "Focus ☕" + minutes + ":" + seconds;
       document.body.style.backgroundColor = "#f5f5f5";
     }
   }, [minutes, seconds, mode]);
