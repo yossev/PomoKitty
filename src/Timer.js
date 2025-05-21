@@ -58,21 +58,12 @@ function Timer() {
     },1000);
 
     return () => {
-    clearInterval(interval)
+      clearInterval(interval);
       audio.pause();
       audio.currentTime = 0;
     }
   }, []);
 
-  const ModeText = modeRef.current === 'work' ? 'Focus ☕' : 'Break 💤';
-  if(modeRef.current === 'break'){
-    document.title = "Take a Break!";
-    document.body.style = "background-color: #d3cdd1";
-  }
-  else if(modeRef.current === 'work'){
-    document.title = "Focus Time!";
-    document.body.style = "background-color: #f5f5f5";
-  } // To be Displayed Depending on the Mode
   const totalSeconds = mode === 'work'
     ? settingsInfo.workMinutes * 60
     : settingsInfo.breakMinutes * 60;
@@ -81,11 +72,25 @@ function Timer() {
   const minutes = Math.floor(secondsLeft / 60);
   let seconds = secondsLeft % 60;
   if(seconds < 10) seconds = '0'+seconds;
+
+  // New useEffect for updating the title
+  useEffect(() => {
+    if(mode === 'break'){
+      document.title = "Take a Break! " + minutes + ":" + seconds;
+      document.body.style.backgroundColor = "#d3cdd1";
+    }
+    else if(mode === 'work'){
+      document.title = "Focus Time! " + minutes + ":" + seconds;
+      document.body.style.backgroundColor = "#f5f5f5";
+    }
+  }, [minutes, seconds, mode]);
+
+  const ModeText = modeRef.current === 'work' ? 'Focus ☕' : 'Break 💤';
   
   return (
     <div>
       <h1 style={{color: coffee}}>{ModeText}</h1>
-<img src={logo} alt="Logo" style={{ position: 'absolute', top: 0, left: 0, width: '200px', height: 'auto' }} />
+      <img src={logo} alt="Logo" style={{ position: 'absolute', top: 0, left: 0, width: '200px', height: 'auto' }} />
       <CircularProgressbar
         value={percentage}
         text={minutes + ":" + seconds}
